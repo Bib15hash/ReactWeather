@@ -3,16 +3,17 @@ var React = require('react');
 var ErrorModal = React.createClass({
 getDefaultProps: function(){
   return{
-    title: 'Error',
-    message:'City not found!'
+    title: 'Error 404',
+    message:'Oops...city not found!!'
+
   };
 },
 /*
 propTypes: {
   title: React.PropTypes.string,
-  message: React.PropTypes.string
-},
-*/
+  message: React.PropTypes.string.isRequired
+},*/
+
 componentDidMount: function(){
   var modal = new Foundation.Reveal($('#error-modal'));
   modal.open();
