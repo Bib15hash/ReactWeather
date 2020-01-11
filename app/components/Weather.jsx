@@ -58,7 +58,7 @@ componentWillReceiveProps: function(newProps){
     function renderMessage (){
 
       if (isLoading){
-        return <h3 classname="text-center">Fetching Weather...</h3>;
+        return <h3 className="text-center">Fetching Weather...</h3>;
       }
       else if (temp && location){
         return <WeatherMessage temp={temp} location = {location}/>;
